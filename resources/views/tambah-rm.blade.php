@@ -116,7 +116,7 @@
                     @endforeach
                         <div class="form-group row">
                             <label for="dokter">Dokter Pemeriksa</label>
-                            <select class="form-control " name="dokter" {{(Auth::user()->admin !== 1) ? (Auth::user()->profesi !== "Staff") ? 'disabled="true"' : '' : ''}}>
+                            <select class="form-control " name="dokter" {{(Auth::user()->admin !== 1) ? (Auth::user()->profesi !== "Dokter") ? 'disabled="true"' : '' : ''}}>
                             @foreach ($dokters as $dokter)
                             <option value ="{{$dokter->id}}" {{$dokter->id === Auth::user()->id ? 'selected' : ''}}>dr. {{get_value('users',$dokter->id,'name') }}</option>
                             @endforeach
