@@ -13,7 +13,9 @@
 	</style>
 
 <center>
-	<h5>LAPORAN OBAT KLINIK UTAMA HALMAHERA MEDIKA</h5>
+	<h5>LAPORAN OBAT</h5>
+	<h5>KLINIK UTAMA HALMAHERA MEDIKA</h5>
+
 </center>
  
 	<table class='table table-bordered'>
