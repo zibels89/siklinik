@@ -61,6 +61,8 @@ Route::get('/pasien/edit/{id}', 'PasienController@edit_pasien')->name('pasien.ed
 
 Route::get('/obat', 'ObatController@index')->name('obat')->middleware('auth');
 
+Route::get('/obat/cetak_pdf', 'ObatController@cetak_pdf')->name('obat.cetak_pdf')->middleware('auth');
+
 Route::delete('/obat/hapus/{id}', 'ObatController@hapus_obat')->name('obat.destroy')->middleware('auth', 'staff');
 
 Route::get('/obat/edit/{id}', 'ObatController@edit_obat')->name('obat.edit')->middleware('auth', 'staff');
@@ -104,11 +106,11 @@ Route::get('/rm/lihat/{id}', 'RMController@lihat_rm')->name('rm.lihat')->middlew
 Route::get('/tagihan/{id}', 'RMController@tagihan')->name('tagihan')->middleware('auth');
 //Endtagihan
 
-//Tagihan
+//Pengaturan
 Route::get('/pengaturan', 'PengaturanController@index')->name('pengaturan')->middleware('auth', 'admin');
 
 Route::patch('/pengaturan/simpan', 'PengaturanController@simpan')->name('pengaturan.simpan')->middleware('auth', 'admin');
-//Endtagihan
+//EndPengaturan
 
 
 

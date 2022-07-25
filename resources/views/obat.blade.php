@@ -68,7 +68,9 @@
               <i class="fas fa-upload fa-sm"></i> Import Excel
               </button>
               <a href="{{route('obat.tambah')}}" class="d-none d-sm-inline-block btn btn-primary btn-sm shadow-sm">
-              <i class="fas fa-plus fa-sm"></i> Tambah Obat</a> 
+                <i class="fas fa-plus fa-sm"></i> Tambah Obat</a> 
+              <a href="{{route('obat.cetak_pdf')}}" class="d-none d-sm-inline-block btn btn-sm btn-danger">
+              <i class="fas fa-plus fa-sm"></i> Cetak Pdf</a> 
             </div>
         </div>
             <div class="card-body">
